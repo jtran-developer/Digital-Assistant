@@ -1,0 +1,110 @@
+<root>
+	<nounList>
+		<noun>
+			<key>song</key>
+			<datamap>
+				<word>song</word>
+				<correspondingWord>play</correspondingWord>
+				<commandCode>null</commandCode>
+			</datamap>
+		</noun>
+	</nounList>
+	<verbList>
+		<verb>
+			<key>play</key>
+			<datamap>
+				<word>play</word>
+				<correspondingWord>song</correspondingWord>
+				<commandCode>media player</commandCode>
+			</datamap>
+		</verb>
+		<verb>
+			<key>restart</key>
+			<datamap>
+				<word>restart</word>
+				<correspondingWord>computer</correspondingWord>
+				<commandCode>restart</commandCode>
+			</datamap>
+		</verb>
+		<verb>
+			<key>abort</key>
+			<datamap>
+				<word>abort</word>
+				<correspondingWord>computer</correspondingWord>
+				<commandCode>shutdown abort</commandCode>
+			</datamap>
+		</verb>
+		<verb>
+			<key>open</key>
+			<datamap>
+				<word>open</word>
+				<correspondingWord>file</correspondingWord>
+				<commandCode>open</commandCode>
+			</datamap>
+		</verb>
+		<verb>
+			<key>shutdown</key>
+			<datamap>
+				<word>shutdown</word>
+				<correspondingWord>computer</correspondingWord>
+				<commandCode>shutdown</commandCode>
+			</datamap>
+		</verb>
+	</verbList>
+	<commandList>
+		<command>
+			<key>logoff</key>
+			<prefix>logoff</prefix>
+			<suffix></suffix>
+			<useParameters>false</useParameters>
+		</command>
+		<command>
+			<key>restart</key>
+			<prefix>shutdown /r</prefix>
+			<suffix></suffix>
+			<useParameters>false</useParameters>
+		</command>
+		<command>
+			<key>shutdown abort</key>
+			<prefix>shutdown /a</prefix>
+			<suffix></suffix>
+			<useParameters>false</useParameters>
+		</command>
+		<command>
+			<key>media player</key>
+			<prefix>"D:\Program Files\MPC-HC\mpc-hc64.exe"</prefix>
+			<suffix>/play</suffix>
+			<useParameters>true</useParameters>
+		</command>
+		<command>
+			<key>open</key>
+			<prefix></prefix>
+			<suffix></suffix>
+			<useParameters>true</useParameters>
+		</command>
+		<command>
+			<key>shutdown</key>
+			<prefix>shutdown /s</prefix>
+			<suffix></suffix>
+			<useParameters>false</useParameters>
+		</command>
+	</commandList>
+	<systemcommandList>
+		<systemcommand>
+			<key>print commands</key>
+			<value>printData</value>
+		</systemcommand>
+		<systemcommand>
+			<key>end program</key>
+			<value>endProgram</value>
+		</systemcommand>
+		<systemcommand>
+			<key>save commands</key>
+			<value>saveToXML</value>
+		</systemcommand>
+		<systemcommand>
+			<key>load commands</key>
+			<value>loadFromXML</value>
+		</systemcommand>
+	</systemcommandList>
+</root>
